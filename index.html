@@ -20,18 +20,26 @@
            <a href="#"style="--i:3;">Portfolio</a>
            <a href="#"style="--i:5;">Contact </a>
          </ul>
+         <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
     </nav>
+    <div class="dropdown_menu">
+        <li><a href="hero">home</a>
+          <li><a href="about">about</a>
+          <li><a href="skills">skills</a>
+          <li><a href="Portfolio">Portfolio</a>
+          <li><a href="contact">contact</a> 
+</div>
 </header>
 <body>  
     <div class="content">
-        <div id="imagecontainer"></div>
         <div class="left-container">
             <div class="card">
             <div class="h1">
                 <h1>Szia, <span>SPETI</span> vagyok!</h1>
             </div>
             <div class="h3">
-                <h3>Frontend fejlesztő!</h3>
+                <h3>Van akkor mellbimbód, mint egy káddugó?</h3>
             </div>
             <section>
             <div class="social">
@@ -44,11 +52,28 @@
                 <a href="www.speter.hu">Hire me</a>
             </div>
         </div>
+    </div>
+
         <div class="right-container">
+            
           <div class="img">
             <img src="assets/homeself.png" alt="">
           </div>  
-
         </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+             dropDownMenu.classList.toggle('open')
+             const isOpen = dropDownMenu.classList.contains('open')
+
+             toggleBtnIcon.classList =  isOpen
+             ? 'fa-solid fa-xmark'
+             : 'fa-solid fa-bars'
+        }
+    </script> 
 </body>
 </html>
