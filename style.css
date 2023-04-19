@@ -171,15 +171,14 @@ li > a:hover {
 }
 
 img {
-    padding: 1px;
     border-radius: 50%;
-    filter: grayscale(50%);
+    overflow: hidden;
   }
 
-img:hover {
+/* .img:hover {
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
-}
+} */
 
 .h1 {
     font-size: 29px;
