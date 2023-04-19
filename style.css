@@ -167,6 +167,7 @@ li > a:hover {
     align-items:flex-start;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 img {
