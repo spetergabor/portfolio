@@ -10,6 +10,9 @@
     text-decoration: none;
     
 }
+body {
+    background-color: lightgray;
+}
 
 .header {
     position: fixed;
@@ -166,6 +169,17 @@ li > a:hover {
     flex-direction: column;
 }
 
+img {
+    padding: 1px;
+    border-radius: 50%;
+    filter: grayscale(50%);
+  }
+
+img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
 .h1 {
     font-size: 29px;
     font-weight: 900;
@@ -255,21 +269,7 @@ li > a:hover {
 
 }
 
-body {
-    background-color: lightgray;
-}
 
-
-img:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
-
-}
-
-img {
-    padding: 1px;
-    border-radius: 50%;
-  }
 
 span {
     background: linear-gradient(45deg, #f06, #3cf );
