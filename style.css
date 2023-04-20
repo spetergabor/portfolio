@@ -85,7 +85,6 @@ li > a:hover {
 }
 
 .dropdown_menu  {
-    display: flex;
     position: absolute;
     height: 0;
     top: 70px;
@@ -146,6 +145,12 @@ li > a:hover {
 
        }
     }
+    @media (min-width: 992px){
+        .dropdown_menu { 
+            display: none;
+
+        }
+    }
     @media (max-width: 576px){
        .dropdown_menu {
            width: 100vw;
@@ -154,6 +159,7 @@ li > a:hover {
            gap: 30px;
        }
     }
+
 
 .left-container {
     width: 50%;
