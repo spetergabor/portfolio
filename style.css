@@ -116,8 +116,11 @@ li > a:hover {
     }
     .right-container  {
         width: 100%;
+        height: 100vw;
+        text-align: center; 
     }
     }
+
 
     @media (max-width: 992px) {
         .navbar .link,
@@ -160,12 +163,11 @@ li > a:hover {
 .right-container {
     width: 50%;
     position: relative;
-    align-items:flex;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     top: 100px;
-
+    background-image: url(assets/homeself.png);
+    background-repeat: no-repeat;
 }
 
  img {
