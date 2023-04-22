@@ -6,10 +6,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    
+
 }
 body {
     background-color: lightgray;
+}
+
+.first_block {
+    background-image: url(assets/hatter.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    position: absolute;
 }
 
 .header {
@@ -48,6 +57,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    position: relative;
+    top: 100px;
+
 }
 
 .content > * {
@@ -117,7 +129,7 @@ li > a:hover {
     .right-container  {
         width: 100%;
         height: 100vw;
-        text-align: center; 
+        margin-left: 25%;
     }
     }
 
@@ -156,8 +168,10 @@ li > a:hover {
     width: 50%;
     display: flex;
     position: relative;
-    justify-content: space-between ;
-    padding: 200px 10% 0% 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10% 10% 10%;
+
 }
 
 .right-container {
@@ -165,16 +179,13 @@ li > a:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    top: 100px;
     background-image: url(assets/homeself.png);
     background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:contain
 }
 
- img {
-    position: relative;
-    top: 100px;
-    align-items: flex-end;
-  }
+
 
 /* .img:hover {
     transform: scale(1.1);
@@ -182,14 +193,33 @@ li > a:hover {
 } *//assets/homeself.png
 
 
-.h3 {
-    margin-bottom: 30px;
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1rem;
 }
-.h1 {
-    font-size: 30px;
+
+h3 {
+    font-size: 1rem;
+    padding-top: 5%;;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3rem;
     font-weight: 900;
     line-height: 1;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+}
+
+span {
+    background: linear-gradient(45deg, #f06, #3cf );
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+
+    -webkit-background-clip: text;
 }
 
 .social {
@@ -235,7 +265,11 @@ li > a:hover {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    margin-left: 35px; 
+    margin-left: 35px;
+}
+
+.navbar {
+    padding-right: 5%;
 }
 
 .social i {
@@ -269,15 +303,5 @@ li > a:hover {
 
 }
 
-span {
-    background: linear-gradient(45deg, #f06, #3cf );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
 
-.first_block {
-    background-image: url(assets/hatter.png);
-    background-repeat: no-repeat;
-    height: 100vh;
-    align-items: center;
-}
+
