@@ -247,7 +247,7 @@ h3 {
 }
 
 .second-text {
-    padding: 10% 10% 20% 10%;
+    padding: 20% 10% 20% 10%;
     position: relative;
     vertical-align: middle;
     text-align: center;
@@ -286,6 +286,8 @@ p {
     }
     h2 {
         padding-bottom: 10%;
+        font-size: 2rem;
+
     }
     }
 
