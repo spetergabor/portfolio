@@ -10,38 +10,36 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
+<body>
 <header class="header">
     <a href="#" class="logo">SPETER</a>
     <nav class="navbar">
         <ul class="link">
-           <a href="#"style="--i:1;" class="active">Home</a></li>
-           <a href="#"style="--i:2;">About</a>
-           <a href="#"style="--i:3;">Skills</a>
-           <a href="#"style="--i:3;">Portfolio</a>
-           <a href="#"style="--i:5;">Contact </a>
+           <a href="#" class="active">Home</a></li>
+           <a href="#">About</a>
+           <a href="#">Skills</a>
+           <a href="#">Portfolio</a>
+           <a href="#">Contact </a>
          </ul>
          <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
     </nav>
     <div class="dropdown_menu">
-        <li><a href="hero">home</a>
-          <li><a href="about">about</a>
-          <li><a href="skills">skills</a>
-          <li><a href="Portfolio">Portfolio</a>
-          <li><a href="contact">contact</a> 
+         <li><a href="hero" data-text="home">home</a>
+         <li><a href="about" data-text="about">about</a>
+         <li><a href="skills" data-text="skills">skills</a>
+         <li><a href="Portfolio" data-text="portfolio">Portfolio</a>
+         <li><a href="contact" data-text="contact">contact</a>  
 </div>
 </header>
-<body>
-    <div class="first_block">
-    <div class="content">
+<main>
+    <section class="first-block">
         <div class="left-container">
             <div class="card">
             <div class="h1">
                 <h1>Szia, <span>SPETI</span> vagyok!</h1>
-            </div>
-            
-            <h3>Van akkora mellbimbód, mint egy káddugó?</h3>
-            
+            </div>        
+            <h3>Van akkora mellbimbód, mint egy káddugó?</h3>     
             <section>
             <div class="social">
                 <div class="fb"><a href="#"><i class='bx bxl-facebook'></i></a></div>
@@ -54,14 +52,19 @@
             </div>
         </div>
     </div>
-
         <div class="right-container"> 
- 
         </div>
     </div>
-</div>
-<div class="masodik-blokk">
-</div>
+    </section>
+
+    <section class="second-block">
+        <div class="second-text">
+          <h2>Nem, nincs akkora még</h2>
+          <p>De már ivarérett vagyok adipisicing elit. Delectus aspernatur labore sunt eos cum dolores neque perferendis quasi velit itaque, aliquid, repudiandae incidunt error, consequuntur quas placeat libero. Dolorem, porro?</p>
+        </div>
+    </section>    
+
+
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -76,5 +79,6 @@
              : 'fa-solid fa-bars'
         }
     </script> 
+    </main>
 </body>
 </html>
