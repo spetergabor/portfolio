@@ -247,7 +247,7 @@ h3 {
 }
 
 .second-text {
-    padding: 20% 10% 20% 10%;
+    padding: 10% 10% 10% 10%;
     position: relative;
     vertical-align: middle;
     text-align: center;
@@ -257,7 +257,7 @@ h3 {
 h2 {
     color: black;
     padding-top: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
     font-size: 3rem;
 }
 
@@ -265,6 +265,35 @@ p {
     color: lightgray;
 }
 
+.second-text-span {
+    font-size: 3rem;
+}
+
+/*third block */
+
+.third-block {
+    background:black;
+    width: 100%;
+    height: 100wv;
+    color: white;
+
+  
+}
+
+.third-text {
+    padding: 0% 10% 10% 10%;
+    position: relative;
+    text-align: center;
+}
+
+.third-h2 {
+    font-size: 3rem;
+    color: lightgray;
+}
+
+p {
+    color: lightgray;
+}
 
 /*responsive style */
 
@@ -284,9 +313,21 @@ p {
     .second-block {
         padding-top: 10%;
     }
-    h2 {
+    h2  {
         padding-bottom: 10%;
         font-size: 2rem;
+    }
+
+    .second-text-span {
+        font-size: 2rem;
+    }
+
+    .second-text {
+        padding-bottom: 20%;
+    }
+    .third-h2 {
+        font-size: 2rem;
+        padding-bottom:10%;
 
     }
     }
