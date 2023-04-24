@@ -256,7 +256,7 @@ h3 {
 }
 
 h2 {
-    color: black;
+    color: lightgray;
     padding-top: 10%;
     padding-bottom: 5%;
     font-size: 3rem;
@@ -421,6 +421,11 @@ p {
         height: auto;
         margin-bottom: 1rem;
     }
+
+.tomodell {
+    border-radius: 22px;
+}
+
     }
 
 
