@@ -386,6 +386,8 @@ p {
     text-align: left;
 }
 
+
+
 /*responsive style */
 
 @media (max-width: 576px) {
@@ -418,7 +420,7 @@ p {
     }
 
     .second-text {
-        padding-bottom: 40%;
+        padding-bottom: 0%;
 
     }
     .third-h2 {
