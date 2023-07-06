@@ -121,13 +121,18 @@ body > * {
 .first-block {
     display: flex;
     flex-wrap: wrap;
+    height: auto;
+    padding-top: 10%;
+
+    position: relative;
+}
+
+.foto {
     background-image: url(assets/hatter.png);
     background-repeat: no-repeat;
     width: 100%;
-    position: relative;
-    top: 100px;
+    
 }
-
 
 .left-container {
     width: 50%;
@@ -241,23 +246,22 @@ h3 {
 
 
 .second-block {
+    position: relative;
+    display: flex;
     background:linear-gradient(180deg, rgb(211, 211, 211), rgb(0, 0, 0) );
     max-height: 400px;
-    width: 100%;
-  
+    width: fit-content;
+    text-align: center;
 }
 
 .second-text {
-    padding: 10% 10% 10% 10%;
-    position: relative;
-    vertical-align: middle;
+    padding: 10%;
     text-align: center;
 
 }
 
 h2 {
     color: lightgray;
-    padding-top: 10%;
     padding-bottom: 5%;
     font-size: 3rem;
 }
@@ -270,19 +274,24 @@ h2 {
 
 p {
     color: lightgray;
+    max
 }
 
 .second-text-span {
     font-size: 3rem;
 }
 
+.second-p {
+    display: inline;
+}
+
 /*third block */
 
 .third-block {
-    background:black;
     width: 100%;
     height: 100wv;
     background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0,0,0,1) 30%);
+
 }
 
 
@@ -308,6 +317,8 @@ p {
     padding-right: 10%;
     padding-left: 10%;
     padding-bottom: 10%;
+    position: relative;
+    text-align: center;
 }
 
 .box {
@@ -324,12 +335,18 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.music-data {
+    flex-wrap: wrap;
+    position: relative;
+}
+
 .musictext {
     text-align: left;
     font-size: 16px;
     padding-left: 5%;
     font-weight: 600;
 }
+
 
 .musictitlebox {
     display: inline-block;
@@ -344,16 +361,17 @@ p {
     padding-left: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
+
 }
 
 .time {
-    width: 40%;
+    width: 44%;
     display: inline-block;
     text-align: right;
     font-size: 12px;
     padding-top: 3%;
     padding-bottom: 3%;
-    
+
 }
 
 .line {
@@ -369,24 +387,57 @@ p {
     border-radius: 16px;
 }
 
-.kiskep {
-    width: 20px;
-    border-radius: 50%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
+
+
+.pic-sub {
     display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.kiskep-block {
+    margin-left: 5%;
+    width: 10%;
+}
+
+.kiskep {
+    width: 100%;
+    display: flex;
+    border-radius: 50%;
+
 }
 
 .subtitle {
-    width: 150px;
-    font-size: 8px;
+    width: 80%;
+    font-size: 9px;
     margin-left: 5px;
-    vertical-align: middle;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+align-items: center;
 }
 
+/*fourth block */
 
+.fourth-block {
+    height: 100vw;
+    background:linear-gradient(180deg, rgb(0, 0, 0), rgb(211, 211, 211) );
+
+}
+
+.fourth-text {
+    position: relative;
+    text-align: center;
+}
+
+.fourth-h2 {
+    font-size: 3rem;
+    color: lightgray;
+    padding: 10% 10% 3% 10%;
+
+}
 
 /*responsive style */
 
@@ -407,6 +458,7 @@ p {
 
     }
     .second-block {
+        position: relative;
         padding-top: 10%;
         height: 100%;
     }
@@ -417,12 +469,14 @@ p {
 
     .second-text-span {
         font-size: 2rem;
-    }
-
-    .second-text {
-        padding-bottom: 0%;
 
     }
+
+    .third-block {
+        position: relative;
+
+    }  
+
     .third-h2 {
         font-size: 2rem;
         padding-bottom:10%;
@@ -439,6 +493,8 @@ p {
 }
 
     }
+
+
 
 
 
