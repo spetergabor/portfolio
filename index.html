@@ -59,19 +59,13 @@
         <div class="right-container" >
         </div>
     </div>
-    <div class="" id="scrolling" style="overflow:auto; height: auto; margin-top: -600px; z-index: -11; opacity: 0.5;">
+    <div class="" style="overflow:auto; height: auto; margin-top: -600px; z-index: -11; opacity: 0.5;">
     <img src="assets/hatter.png" alt="" id="hatter-image">
 </div>
     </section>
-    <section class="second-block">
-        <div class="second-text">
-          <h2>Nem, nincs <span class="second-text-span">akkora</span> még!</h2>
-          <center><hr class="first-hr"></center>
-          <div class="second-p">
-          <p class="second-p">De már ivarérett vagyok adipisicing elit. Delectus aspernatur labore sunt eos cum dolores neque perferendis quasi velit itaque, aliquid, repudiandae incidunt error, consequuntur quas placeat libero. Dolorem, porro?</p></div>
-        </div>
-    </section>  
+ 
     <section class="third-block">
+        <div class="gradient" id="gradient"></div>
         <div class="third-text">
           <h2 class="third-h2">Gyere, hallgasd meg <br> a<span class="second-text-span"> kedvenc </span>zenéimet!</h2></div>
 
@@ -155,14 +149,26 @@
              ? 'fa-solid fa-xmark'
              : 'fa-solid fa-bars'
         } 
-    </script> 
 
-    <script>
         window.addEventListener('scroll', function() {
     let hatterImage = document.getElementById('hatter-image');
     let value = window.scrollY;
     hatterImage.style.transform = 'translateX(' + (-value) + 'px)';
 });
+
+const zoomElement = document.querySelector(".gradient");
+let zoom = 1;
+const ZOOM_SPEED = 0.01;
+
+document.addEventListener("wheel", function(e) {  
+    
+    if(e.deltaY > 0){    
+        zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`;  
+    }else{    
+        zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  }
+
+});
+
     </script>
 
 
