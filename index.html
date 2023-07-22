@@ -64,10 +64,35 @@
 </div>
     </section>
  
+
+    </section> 
     <section class="third-block">
         <div class="gradient" id="gradient"></div>
         <div class="third-text">
-          <h2 class="third-h2">Gyere, hallgasd meg <br> a<span class="second-text-span"> kedvenc </span>zenéimet!</h2></div>
+          <h2 class="third-h2">Gyere, hallgasd meg <br> a kedvenc <span class="second-text-span">zenéimet!</h2></span></div>
+          <div class="radio-button-container">
+            <div class="radio-button">
+            <input type="radio" class="radio-button__input" id="radio1" name="radio-group">
+            <label class="radio-button__label" for="radio1">
+              <span class="radio-button__custom"></span>
+              <p class="gradient-effect">Könyvem</p>
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="radio" class="radio-button__input" id="radio2" name="radio-group">
+            <label class="radio-button__label" for="radio2">
+              <span class="radio-button__custom"></span>
+              <p class="gradient-effect">Filmem</p>
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="radio" class="radio-button__input" id="radio3" name="radio-group">
+            <label class="radio-button__label" for="radio3">
+              <span class="radio-button__custom"></span>
+              <p class="gradient-effect">Zeném</p>
+            </label>
+          </div>
+          </div>
 
           <div class="boxes">
           <div class="box">
@@ -168,7 +193,6 @@ document.addEventListener("wheel", function(e) {
         zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  }
 
 });
-
     </script>
 
 

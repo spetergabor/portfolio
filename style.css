@@ -149,12 +149,14 @@ h1 {
     padding-bottom: 5%;
 }
 
+
 span {
     background: linear-gradient(45deg, #f06, #3cf );
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
     -webkit-background-clip: text;
 }
+
 
 h3 {
     font-size: 1rem;
@@ -299,6 +301,7 @@ p {
     background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(0, 0, 0, 0) 30%);
     height: 100vh;
     margin-bottom: -650px;
+    overflow: hidden;
 }
 
 .third-text {
@@ -318,6 +321,84 @@ p {
 }
 
 /*boxes block */
+
+/* .gradient-effect {
+    background: linear-gradient(45deg, #f06, #3cf );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  } */
+
+.radio-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .radio-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .radio-button__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .radio-button__label {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .radio-button__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    transition: all 0.3s ease;
+  }
+  
+  .radio-button__input:checked + .radio-button__label .radio-button__custom {
+    background: #ffffff;
+    border-color: transparent;
+    transform: scale(0.8);
+    box-shadow: 0 0 20px #ffc30e;
+
+  }
+  
+  .radio-button__input:checked + .radio-button__label {
+    background: linear-gradient(45deg, #f06, #3cf );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;  }
+  
+  .radio-button__label:hover .radio-button__custom {
+    transform: scale(1.2);
+    border-color: #ffc30e;
+    box-shadow: 0 0 20px #ffc30e;
+
+  }
+  
+
+  
+  
+  
+
 
 .boxes {
     padding-right: 10%;
